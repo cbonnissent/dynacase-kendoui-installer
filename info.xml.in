@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<module name="@PACKAGE@" version="@VERSION@" release="@RELEASE@" basecomponent="no">
+
+    <description>Kendo UI : Everything you need to build sites and apps with pure JavaScript and HTML5.</description>
+
+    <requires>
+        <module comp='ge' version='1.7' name='dynacase-jquery-installer'/>
+    </requires>
+
+    <parameters>
+        <param name="KendoUI" label="KendoUI download URL" type="text"
+               volatile="yes" onupgrade="W"
+               default="ftp://ftp.anakeen.com/third-party/KendoUI-@VERSION@.zip"/>
+    </parameters>
+
+    <post-install>
+        <download href="@KendoUI" action="programs/kendoui_install">
+            <label lang="en">Download and install KendoUI @VERSION@
+            </label>
+        </download>
+    </post-install>
+
+    <post-upgrade>
+        <download href="@KendoUI" action="programs/kendoui_install">
+            <label lang="en">Download and install KendoUI @VERSION@
+            </label>
+        </download>
+    </post-upgrade>
+
+</module>
