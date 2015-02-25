@@ -1,0 +1,4 @@
+<FilesMatch "\.(js|html|css|less|eot|ttf|woff|svg|map)$">
+        Order Deny,Allow
+        Allow from All
+</FilesMatch>
