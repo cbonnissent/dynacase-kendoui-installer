@@ -19,7 +19,7 @@ cp -r kendo-ui-core/dist/* archiveReference/Kendo/2014.3
 ## Generate all files
 
 cd archiveReference/Kendo
-r.js -o ./build.js
+r.js -o ./build.js && r.js -o ./build-minified.js
 
 ## zip the result
 
