@@ -10,7 +10,7 @@
     <parameters>
         <param name="KendoUI" label="KendoUI download URL" type="text"
                volatile="yes" onupgrade="W"
-               default="ftp://ftp.anakeen.com/third-party/KendoUI-@VERSION@.zip"/>
+               default="ftp://ftp.anakeen.com/third-party/KendoUI-@VERSION@.1.zip"/>
     </parameters>
 
     <post-install>
