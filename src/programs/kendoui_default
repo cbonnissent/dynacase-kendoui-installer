@@ -1,0 +1,24 @@
+#!/usr/bin/php
+<?php
+
+$WIFF_CONTEXT_ROOT = getenv("WIFF_CONTEXT_ROOT");
+
+$libPath = $WIFF_CONTEXT_ROOT.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'KendoUI'.DIRECTORY_SEPARATOR;
+
+if (!$WIFF_CONTEXT_ROOT || !is_dir($libPath)) {
+    echo("The path of lib is not valid : $libPath\n");
+    exit(10);
+}
+
+$version = $argv[1];
+
+$versionPath = $libPath.$version.DIRECTORY_SEPARATOR;
+
+if (!is_dir($versionPath)) {
+    echo("The path of lib version is not valid : $versionPath\n");
+    exit(20);
+}
+
+exec("cd $libPath; ln -sf ./$version ./dcp");
+
+exit(0);
