@@ -1,6 +1,6 @@
 AC_INIT(./Makefile.in)
 AC_SUBST(PACKAGE)
-PACKAGE=dynacase-kendoui-installer
+PACKAGE=dynacase-kendoui-2015-installer
 AC_SUBST(VERSION)
 VERSION=`cat VERSION`
 AC_SUBST(RELEASE)
