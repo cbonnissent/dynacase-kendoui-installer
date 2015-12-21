@@ -1,7 +1,6 @@
 require([
 "kendo-culture-en",
 "kendo-culture-fr",
-"kendo/jquery",
 "kendo/kendo.core",
 "kendo/kendo.popup",
 "kendo/kendo.notification",
