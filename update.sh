@@ -10,7 +10,8 @@ mv ../src/js/ .
 mv ../src/styles/ .
 cp ../../../builder/*.js .
 cp ../../../builder/.htaccess .
-r.js -o ./build.js && r.js -o ./build-minified.js
+r.js -o ./build.js
+r.js -o ./build-minified.js
 rm ./*.js
 cd -
 cd KendoUI/$PACKAGE_VERSION/styles/web/common/
