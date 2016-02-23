@@ -1,33 +1,32 @@
-require([
-    "kendo.core",
-    "kendo-culture-en",
-    "kendo-culture-fr",
-    "kendo.popup",
-    "kendo.notification",
-    "kendo.menu",
-    "kendo.userevents",
-    "kendo.draganddrop",
-    "kendo.window",
-    "kendo.data.odata",
-    "kendo.data.xml",
-    "kendo.data",
-    "kendo.list",
-    "kendo.fx",
-    "kendo.mobile.scroller",
-    "kendo.autocomplete",
-    "kendo.numerictextbox",
-    "kendo.calendar",
-    "kendo.datepicker",
-    "kendo.timepicker",
-    "kendo.datetimepicker",
-    "kendo.multiselect",
-    "kendo.combobox",
-    "kendo.dropdownlist",
-    "kendo.color",
-    "kendo.slider",
-    "kendo.colorpicker",
-    "kendo.tabstrip",
-    "kendo.button"
-], function ()
-{
-});
+(function packKendo() {
+
+    "use strict";
+
+    if (typeof define === 'function' && define.amd) {
+        require([
+            "kendo.core",
+            "kendo-culture-en",
+            "kendo-culture-fr",
+            "kendo.popup",
+            "kendo.notification",
+            "kendo.menu",
+            "kendo.window",
+            "kendo.autocomplete",
+            "kendo.numerictextbox",
+            "kendo.calendar",
+            "kendo.datepicker",
+            "kendo.timepicker",
+            "kendo.datetimepicker",
+            "kendo.multiselect",
+            "kendo.combobox",
+            "kendo.dropdownlist",
+            "kendo.color",
+            "kendo.slider",
+            "kendo.colorpicker",
+            "kendo.tabstrip",
+            "kendo.button"
+        ], function require_kendo()
+        {
+        });
+    }
+})();

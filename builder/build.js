@@ -1,3 +1,4 @@
+//noinspection BadExpressionStatementJS
 ({
     baseUrl : "./js",
     paths :   {
@@ -16,6 +17,10 @@
     onBuildWrite : function (name, path, contents) {
         contents = contents.replace(/(['"])\.\.\/kendo\.(\w+['"])/g, "$1kendo.$2");
         return contents.replace(/(['"])kendo\.(\w+['"])/g, "$1kendo/kendo.$2");
+    },
+    wrap: {
+        startFile: '../../../builder/start.js.frag',
+        endFile: '../../../builder/end.js.frag'
     },
     optimize : "none",
     name :    "../main",
