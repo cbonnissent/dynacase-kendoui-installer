@@ -7,6 +7,7 @@
             "kendo.core",
             "kendo-culture-en",
             "kendo-culture-fr",
+            "kendo.draganddrop",
             "kendo.popup",
             "kendo.notification",
             "kendo.menu",
